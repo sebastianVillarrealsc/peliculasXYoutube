@@ -8,7 +8,7 @@ export class TasksController {
   getPeliculas(@Res() res: Response) {
     const jsonFilePath = join(__dirname, '../../data-peliculas/peliculas.json');
     return res.sendFile(jsonFilePath);
-  }
+  },
 }
 
 
